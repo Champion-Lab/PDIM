@@ -487,11 +487,6 @@ ggsave("plots/Fancy/XY1-noNormMatchingcolors.png", height = 11, width = 11)
 
 
 
-
-
-
-
-
 #SECOND FIGURES
 
 
@@ -748,5 +743,5 @@ XY2 <- ggplot() +
   scale_color_manual(values = GroupColors)
 XY2
 
-ggsave("plots/Fancy/XY2-noNormFancyColors.png", height = 11, width = 11)
+ggsave("plots/Fancy/XY2-noNormMatchingcolors.png", height = 11, width = 11)
 
