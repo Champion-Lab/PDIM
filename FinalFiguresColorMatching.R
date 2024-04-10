@@ -408,10 +408,10 @@ Label$gene <- str_replace_all(Label$gene, "esp", "Esp")
 Label$gene <- str_replace_all(Label$gene, "esx", "Esx")
 
 
-group1 <- c("EsxA", "EsxB", "2894")
+group1 <- c("EsxA", "EsxB", "2894", "PPE68")
 group2 <- c("EspJ", "EspB", "EspK")
 group3 <- c("EspE", "EspF")
-Other <- c("PPE68", "EspA")
+Other <- c("EspA")
 
 Label$group[Label$gene %in% group1] <- "Group 1"
 Label$group[Label$gene %in% group2] <- "Group 2"
@@ -475,7 +475,7 @@ XY1 <- ggplot() +
   scale_color_manual(values = GroupColors)
 XY1
 
-ggsave("plots/Fancy/XY1-noNormMatchingcolors.png", height = 11, width = 11)
+ggsave("plots/Fancy/XY1-noNormMatchingcolors2.png", height = 11, width = 11)
 
 # 
 # ggsave("plots/XY1-noNorm.png", height = 11, width = 11)
@@ -676,10 +676,10 @@ Label$gene <- str_replace_all(Label$gene, "esp", "Esp")
 Label$gene <- str_replace_all(Label$gene, "esx", "Esx")
 
 
-group1 <- c("EsxA", "EsxB", "2894")
+group1 <- c("EsxA", "EsxB", "2894", "PPE68")
 group2 <- c("EspJ", "EspB", "EspK")
 group3 <- c("EspE", "EspF")
-Other <- c("PPE68", "EspA")
+Other <- c("EspA")
 
 Label$group[Label$gene %in% group1] <- "Group 1"
 Label$group[Label$gene %in% group2] <- "Group 2"
@@ -743,5 +743,5 @@ XY2 <- ggplot() +
   scale_color_manual(values = GroupColors)
 XY2
 
-ggsave("plots/Fancy/XY2-noNormMatchingcolors.png", height = 11, width = 11)
+ggsave("plots/Fancy/XY2-noNormMatchingcolors2.png", height = 11, width = 11)
 
